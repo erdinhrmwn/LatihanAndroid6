@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">LatihanAndroid6</string>
+    <string-array name="city_list">
+        <item>Jakarta</item>
+        <item>Bandung</item>
+        <item>Surabaya</item>
+        <item>Yogyakarta</item>
+        <item>Medan</item>
+        <item>Jayapura</item>
+        <item>Solo</item>
+    </string-array>
+    <string name="Jakarta">Daerah Khusus Ibukota Jakarta adalah ibu kota negara dan kota terbesar di Indonesia. Jakarta merupakan satu-satunya kota di Indonesia yang memiliki status setingkat provinsi. Jakarta terletak di pesisir bagian barat laut Pulau Jawa.</string>
+    <string name="Bandung">Kota Bandung merupakan kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi tersebut. Kota ini terletak 140 km sebelah tenggara Jakarta, dan merupakan kota terbesar di wilayah Pulau Jawa bagian selatan.</string>
+    <string name="Surabaya">Kota Surabaya adalah ibu kota Provinsi Jawa Timur, Indonesia, sekaligus kota metropolitan terbesar di provinsi tersebut. Surabaya merupakan kota terbesar kedua di Indonesia setelah Jakarta. Kota ini terletak 796 km sebelah timur Jakarta, atau 415 km sebelah barat laut Denpasar, Bali.</string>
+    <string name="Yogyakarta">Kota Yogyakarta adalah ibu kota dan pusat pemerintahan Daerah Istimewa Yogyakarta, Indonesia. Kota Yogyakarta adalah kediaman bagi Sultan Hamengkubuwana dan Adipati Paku Alam.</string>
+    <string name="Medan">Kota Medan adalah ibu kota provinsi Sumatera Utara, Indonesia. Kota ini merupakan kota terbesar ketiga di Indonesia setelah Jakarta dan Surabaya, serta kota terbesar di luar Pulau Jawa.</string>
+    <string name="Jayapura">Kota Jayapura adalah ibu kota provinsi Papua, Indonesia. Kota ini merupakan ibu kota provinsi yang terletak paling timur di Indonesia. Kota ini terletak di teluk Jayapura. Kota ini didirikan oleh Kapten Infanteri F.J.P Sachse dari kerajaan Belanda pada 7 Maret 1910.</string>
+    <string name="Solo">Kota Surakarta, juga disebut Solo atau Sala, adalah wilayah otonom dengan status Kota di bawah Provinsi Jawa Tengah, Indonesia, dengan penduduk 503.421 jiwa dan kepadatan 13.636/km².</string>
+</resources>
