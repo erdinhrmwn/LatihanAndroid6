@@ -3,4 +3,11 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <array name="tab_colors">
+        <item name="tab_1">#2e5ca5</item>
+        <item name="tab_2">#6a2da3</item>
+        <item name="tab_3">#ad1154</item>
+        <item name="tab_4">#a2d61d</item>
+        <item name="tab_5">#3dad11</item>
+    </array>
 </resources>
