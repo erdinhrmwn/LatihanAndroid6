@@ -1,5 +1,6 @@
 package com.example.latihanandroid6;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationAdapter;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationViewPager;
+import com.example.latihanandroid6.PrefHelper.PrefHelper;
 import com.example.latihanandroid6.allAdapter.NavBottomAdapter;
 
 import java.util.ArrayList;
@@ -26,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         viewPager = findViewById(R.id.view_pager);
         bottomNavigation = findViewById(R.id.bottomNav);
+        boolean login = PrefHelper.sharedInstance(getApplicationContext()).isLogin();
+
+        if (!login) {
+            startActivity(new Intent(MainActivity.this, Login.class));
+            finish();
+        }
 
         initUI();
     }

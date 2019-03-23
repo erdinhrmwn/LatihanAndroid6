@@ -51,7 +51,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:hint="Input book author's"
-            android:inputType="textPassword"
+            android:inputType="text"
             android:textColor="#000" />
 
         <TextView
@@ -69,14 +69,32 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:hint="Input book review detail's"
-            android:inputType="textPassword"
+            android:inputType="text"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Content" />
+
+        <EditText
+            android:id="@+id/et_book_content"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Input book content's"
+            android:inputType="textMultiLine"
             android:textColor="#000" />
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="100dp"
+            android:paddingTop="20dp"
             android:gravity="center"
             android:orientation="horizontal">
 

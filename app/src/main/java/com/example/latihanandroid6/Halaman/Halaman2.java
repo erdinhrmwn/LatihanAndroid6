@@ -21,7 +21,6 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 
 import com.example.latihanandroid6.AddBook;
-import com.example.latihanandroid6.PrefHelper.PrefHelper;
 import com.example.latihanandroid6.PrefHelper.UserHelper;
 import com.example.latihanandroid6.R;
 
@@ -51,7 +50,7 @@ public class Halaman2 extends Fragment {
 
         UserHelper helper = new UserHelper(getContext());
         SQLiteDatabase db = helper.getWritableDatabase();
-        String[] datax = {"_id", "title", "author"};
+        String[] datax = {"_id", "title", "author", "content"};
         Cursor c = db.query("books", datax,
                 null,
                 null,
@@ -70,7 +69,7 @@ public class Halaman2 extends Fragment {
                 startActivity(new Intent(getContext(), AddBook.class));
             }
         });
-        registerForContextMenu(v);
+        registerForContextMenu(lv);
         return v;
     }
 
@@ -90,8 +89,8 @@ public class Halaman2 extends Fragment {
                 new String[]{String.valueOf(id)});
         Toast.makeText(getContext(), "Data berhasil dihapus", Toast.LENGTH_SHORT).show();
 
-        Cursor x = db.query("books",
-                new String[]{"_id", "title", "author"},
+        String[] datax = {"_id", "title", "author", "content"};
+        Cursor x = db.query("books", datax,
                 null,
                 null,
                 null,
@@ -105,7 +104,7 @@ public class Halaman2 extends Fragment {
         UserHelper helper = new UserHelper(getContext());
         SQLiteDatabase db = helper.getWritableDatabase();
         Cursor e = db.query("books",
-                new String[]{"title", "author"},
+                new String[]{"title", "author", "content"},
                 "_id=?",
                 new String[]{String.valueOf(id)},
                 null,
@@ -116,6 +115,7 @@ public class Halaman2 extends Fragment {
         i.putExtra("_id", id);
         i.putExtra("title", e.getString(e.getColumnIndex("title")));
         i.putExtra("author", e.getString(e.getColumnIndex("author")));
+        i.putExtra("content", e.getString(e.getColumnIndex("content")));
         startActivity(i);
     }
 

@@ -32,7 +32,7 @@ public class Register extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Please try again.", Toast.LENGTH_SHORT).show();
                 } else {
                     String retype_password = et_pass.getText().toString();
-                    if (et_repass.getText().toString().equals(retype_password)) {
+                    if (!et_repass.getText().toString().equals(retype_password)) {
                         Toast.makeText(getApplicationContext(), "Please check your password.", Toast.LENGTH_SHORT).show();
                     } else {
                         UserHelper helper = new UserHelper(getApplicationContext());

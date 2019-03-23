@@ -17,6 +17,7 @@ public class UserHelper extends SQLiteOpenHelper {
         String bookCreate = "CREATE TABLE books(_id integer primary key autoincrement," +
                 "title text," +
                 "author text," +
+                "review text," +
                 "content text);";
         String userCreate = "CREATE TABLE users(_id integer primary key autoincrement," +
                 "username text," +
